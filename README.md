@@ -19,6 +19,7 @@ Utalize the fifa data set to predict the "Attacking Work Rate" (a/w). Attacking 
       2. Histograms, distribution plots, heat maps, box-whisker plots
       
   Libraries:
+  
       1. Normalizer
       2. StandardScaler
       3. confusion_matrix
