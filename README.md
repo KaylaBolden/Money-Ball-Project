@@ -2,29 +2,59 @@
 
 ![photo](https://github.com/Ironhack-Data-0621-Remote/Project_FIFA_MoneyBall/blob/main/Images/photo.jpg)
 
-## The challenge
+# What made you decide to do this project?
+After learning classification models I wanted to take this opportunity to practice them.
 
-Perform an end-to-end analysis putting into practice what you have learned so far. You will apply statistical or machine learning techniques and present your results to the class.
-
-### Possible Outcomes
-
-- Rank players by market value.
+# Objective 
+Utalize the given data set to predict the "Attacking Work Rate" (a/w). Attacking work rate has 3 possible values: high, medium, and low. 
+ 
+ # Used tools 
+  Programs: 
+      1. Jupiter - python
   
-- Highlight the top players for their outstanding performances over a discrete season.
-- Decide when to transfer a player.
-- Decide the best replacement for a transferred player.
-
-> You might suggest your own outcomes. Check with instructional staff before committing to a new option.
-
-## Objectives
-
-- Ask interesting and thoughtful questions and find the data to answer them.
-  
-- Focus on improving in areas that are hard for you or learning more about something with which you feel comfortable.
-- Apply the statistical and machine learning techniques we have learned.
-- Create useful and clear graphs.
-- Present your insights in a thoughtful, clear, and accurate way.
-
+  Methods:
+      1. Logistic Regression
+      2. Histograms, distribution plots, heat maps, box-whisker plots
+      
+  Libraries:
+      1. Normalizer
+      2. StandardScaler
+      3. confusion_matrix
+      4. cohen_kappa_score
+      5. math
+      6. statistics 
+      7. matplotlib.pyplot
+      8. seaborn
+      9. statsmodels.api
+      10. train_test_split
+      11. one hot encoder
+      12. numpy
+      13. pandas
+      
+ # Workflow
+      1. Gather the Data
+      2. Explore the Data
+      3. Clean the Data
+          a. Categorical data:
+              i.needs to be grouped into fewer buckets
+              ii. dropped if there are too many instances
+              iii. cleaned if there are various values with the same meaning
+          b. Numerical data:
+              i. needs to be converted to number if object (may require functions for data transformations)
+       4. Dealing with Nulls
+       5. Dealing with Outliers
+       6. Check Multicolinearity (but no need to modify since logistic regression isn't impacted by multicolinearity)
+       7. Normalize and or standarize the data
+       8. Apply Train-Test Split
+       9. Train Model
+       10. Test Model
+       
+# Results and conlusions 
+      The accuracy of the model on test set is: 0.67 and the Kappa of the model is: 0.25. The data availible my not contain all the drivers of a person's attacking work rate. While, 67% of the time it accurately predicts the value, 33% of the time it is incorrect. To make matters worse, when predicting the outcome for individuals with a 'high' attacking work rate, it predicts them to be medium 61% of the time.
+      
+# Improvements
+      Remove highly correlated columns and then remove outliers so that fewer rows are filtered out.
+      
 ## Dataset
 
 In this project, you will use the provided [**fifa21_male2.csv**](https://github.com/Ironhack-Data-0621-Remote/Project_FIFA_MoneyBall/tree/main/Data) dataset.
@@ -74,43 +104,4 @@ This data set includes:
    - **YC:** Yellow Cards
    - **RC:** Red Cards
 
-## Instructions & Scope
 
-- You **CAN'T CODE** until your project is planned.
-  
-- Create a `*.gitignore*` file and include it in your repository.
-- You should include a linear regression question(s) on the data.
-
-## Deliverables
-
-- Repository with your workflow + documentation + code. This repository must contain:
-  
-  - README: it is mandatory to present the project. 
-    - What made you decide to do this project?
-    - Objetive 
-    - Used tools 
-    - Workflow
-    - Results and conlusions (this is not so obligatory, it is a more personal decision)
-
-    ⚠️ Readme will be the first thing that people will see from us. A person who knows nothing about this project should be able to read your readme and know what you have done. 
-
-- A SQL Database with the FIFA_MoneyBall, using the learned statements during the last weeks
-
-- A well-commented Jupyter notebook with your analysis.
-
-  ⚠️ Remember, you could use the markdown cells in jupyter!! 
-
-- The final dataset after all cleaning and transformations.
-
-- To send us your work... as always a pull request where in the comments leave us the link to your repo.
-
-
-## Tips & Tricks
-
-- Organize yourself (don't get lost!). Respect deadlines.
-  
-- Ask for help but don't forget that Google is your friend.
-- Define a simple approach first. You never know how the data can betray you. :wink:
-- Document your work.
-- Learn about the problem and what research has been done before you.
-- Before making a graph, think about what you want to represent.
