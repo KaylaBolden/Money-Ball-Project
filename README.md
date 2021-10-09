@@ -10,9 +10,11 @@ Utalize the given data set to predict the "Attacking Work Rate" (a/w). Attacking
  
  # Used tools 
   Programs: 
+  
       1. Jupiter - python
   
   Methods:
+  
       1. Logistic Regression
       2. Histograms, distribution plots, heat maps, box-whisker plots
       
