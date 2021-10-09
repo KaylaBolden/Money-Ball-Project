@@ -6,7 +6,7 @@
 After learning classification models I wanted to take this opportunity to practice them.
 
 # Objective 
-Utalize the given data set to predict the "Attacking Work Rate" (a/w). Attacking work rate has 3 possible values: high, medium, and low. 
+Utalize the fifa data set to predict the "Attacking Work Rate" (a/w). Attacking work rate has 3 possible values: high, medium, and low. The data set is at the person level and contains various metrics/dimensions about the player ranging from information about them, their contracts, and kpis of their skill and performance.
  
  # Used tools 
   Programs: 
