@@ -53,7 +53,8 @@ Utalize the given data set to predict the "Attacking Work Rate" (a/w). Attacking
        
 # Results and conlusions 
       The accuracy of the model on test set is: 0.67 and the Kappa of the model is: 0.25. The data availible my not contain all the drivers of a person's attacking work rate. While, 67% of the time it accurately predicts the value, 33% of the time it is incorrect. To make matters worse, when predicting the outcome for individuals with a 'high' attacking work rate, it predicts them to be medium 61% of the time.
-      ![photo](https://github.com/KaylaBolden/Money-Ball-Project/blob/main/Images/Screen%20Shot%202021-10-09%20at%201.07.43%20PM.png)
+![photo](https://github.com/KaylaBolden/Money-Ball-Project/blob/main/Images/Screen%20Shot%202021-10-09%20at%201.07.43%20PM.png)
+
       
 # Improvements
       Remove highly correlated columns and then remove outliers so that fewer rows are filtered out.
